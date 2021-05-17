@@ -1,0 +1,26 @@
+@import 'colors';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section.main-content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+}
