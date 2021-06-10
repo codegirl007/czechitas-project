@@ -1,16 +1,15 @@
+@import 'colors';
+
 app-day {
-    aspect-ratio: 1/1; /*zachovani pomeru stran velikosti dnu (stverce) */
-    width: auto;
-    height: auto;
-    display: flex; /* k zarovnani obsahu na stred */
-    align-items: center;
+    display: flex;
+    aspect-ratio: 1/1;
     justify-content: center;
-    border: 1px solid rgba(0, 0, 0, .3); /*okraj */
-    border-radius: .5rem; /* zaobleni rohu */
-    cursor: pointer; /* kurzor */
-    transition: .5s; /* casovy udaj pro animovani prechodu zmen css */
-}
-    
-app-day:hover {
-    background-color: rgba(0, 0, 0, .15); /* zmena pozadi pri hoveru */
+    align-items: center;
+    color: $white;
+    background-color: $light-green;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    &:hover {
+        box-shadow: 0 5px 10px transparentize($black, .7);
+    }
 }

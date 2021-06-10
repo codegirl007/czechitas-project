@@ -21,6 +21,75 @@ section.main-content {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+section.modal-container, section.clock-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(35, 35, 35, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body {
+  min-width: 35rem;
+  background-color: #F7F7F7;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(35, 35, 35, 0.3);
+  padding: 1rem;
+}
+
+.modal-header {
+  display: flex;
+}
+.modal-header > *:first-child {
+  flex: 1 0 0;
+}
+
+.separator {
+  border-bottom: 1px solid rgba(35, 35, 35, 0.3);
+  margin: 1rem 0;
+}
+
+.modal-actions {
+  padding-top: 1rem;
+}
+
+#modal-form {
+  display: flex;
+  flex-direction: column;
+}
+#modal-form .row {
+  display: flex;
+  padding: 8px 0;
+  justify-content: space-between;
+  position: relative;
+}
+#modal-form .row::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(35, 35, 35, 0.3);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.clock-body {
+  min-width: 35rem;
+  background-color: #F7F7F7;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(35, 35, 35, 0.3);
+  padding: 2rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,25 +1,15 @@
 app-day {
-  aspect-ratio: 1/1;
-  /*zachovani pomeru stran velikosti dnu (stverce) */
-  width: auto;
-  height: auto;
   display: flex;
-  /* k zarovnani obsahu na stred */
-  align-items: center;
+  aspect-ratio: 1/1;
   justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  /*okraj */
-  border-radius: 0.5rem;
-  /* zaobleni rohu */
-  cursor: pointer;
-  /* kurzor */
-  transition: 0.5s;
-  /* casovy udaj pro animovani prechodu zmen css */
+  align-items: center;
+  color: #F7F7F7;
+  background-color: #82A383;
+  border-radius: 1rem;
+  font-size: 2.5rem;
 }
-
 app-day:hover {
-  background-color: rgba(0, 0, 0, 0.15);
-  /* zmena pozadi pri hoveru */
+  box-shadow: 0 5px 10px rgba(35, 35, 35, 0.3);
 }
 
 /*# sourceMappingURL=day.css.map */

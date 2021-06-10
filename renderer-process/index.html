@@ -14,8 +14,59 @@
         <section class="main-content">
         </section>
         <footer class="footer">
-
         </footer>
+        <template id="modal-template">
+            <section class="modal-container">
+                <div class="modal-body">
+                    <div class="modal-header">
+                        <span>Day Detail</span>
+                        <i id="close-modal" class="fas fa-times"></i>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="modal-contents">
+                        <form id="modal-form">
+                            <div class="row">
+                                <label for="isHoliday">Holiday</label>
+                                <input id="isHoliday" name="isHolidayControl" type="checkbox">
+                            </div>
+                            <div class="row">
+                                <label>Title</label>
+                                <input id="eventTitle" name="eventTitle" type="text">
+                            </div>
+                            <div class="row">
+                                <label>Description</label>
+                                <textarea id="eventDescription" name="eventDescription"></textarea>
+                            </div>
+                            <div class="row">
+                                <label>Limit Attendees by Gender</label>
+                                <input type="checkbox" name="limitAttendeesByGender" id="limitAttendeesByGender">
+                            </div>
+                            <div id="genderSelectRow" class="row hidden">
+                                <label>Male</label>
+                                <input type="radio" name="gender" value="Male">
+                                <label>Female</label>
+                                <input type="radio" name="gender" value="Female">
+                            </div>
+                            <div class="row">
+                                <label>Attendees</label>
+                                <select name="eventAttendees" id="eventAttendees">
+                                    <option value=' '> </option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-actions">
+                        <button id="save-button">Save</button>
+                        <button id="cancel-button">Cancel</button>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="clock-modal">
+            <section class="clock-container">  
+                <div class="clock-body">  </div>           
+            </section>
+        </template>
         <script type="module" src="./main.js"></script>
     </body>
 </html>
