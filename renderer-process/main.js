@@ -109,34 +109,15 @@ function populateDays (currentyear, currentmonth) {
         CURRENT_DATE.getFullYear(), 
         CURRENT_DATE.getMonth(), i);
       mainContent.appendChild(new Day(dayDate));
-      let CURRENT_NUMBER = new Date().getDate();
-      console.log(CURRENT_NUMBER)
 
       const divDays = document.querySelectorAll("#day-number");
-      for (let divDay of divDays) {
-          divDay.id = dayDate.getDate();
-          if ((divDay.id == new Date().getDate()) && currentmonth == new Date().getMonth() && currentyear == new Date().getFullYear()) 
-          { divDay.parentNode.style.backgroundColor = "red" }
+      for (let day of divDays) {
+         day.id = dayDate.getDate();
+          if ((day.id == new Date().getDate()) && currentmonth == new Date().getMonth() && currentyear == new Date().getFullYear()) 
+          { day.parentNode.style.backgroundColor = "red" }
       }      
   }
 }
-
- 
-// const currentDate = new Date()
-
-// const maxDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
-
-// for(let i = 1; i <= maxDate; i++){
-//     const dayDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), i);
-//     mainContent.appendChild(new Day(dayDate));
-// }
-
-
-//     const dayDate = new Date(
-//       currentDate.getFullYear(), 
-//       currentDate.getMonth(), i);
-//     mainContent.appendChild(new Day(dayDate));
-
 
 
 // ***DAY MODAL***
