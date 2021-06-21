@@ -26,6 +26,22 @@ section.main-content {
     padding: 0.5rem 1rem;
 }
 
+.selects {
+   width: 100%;
+   height: 5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.select-months, .select-years {
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    margin: 0.5rem;
+}
+
 section.modal-container, section.clock-container  {
     width: 100%;
     height: 100%;
@@ -92,4 +108,8 @@ section.modal-container, section.clock-container  {
     box-shadow: .5rem .5rem 1rem $light-dark;
     padding: 2rem;
     text-align: center;
+}
+
+.current-day {
+    background-color: red;
 }

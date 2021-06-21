@@ -1,4 +1,4 @@
-@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -24,6 +24,22 @@ section.main-content {
   padding: 0.5rem 1rem;
 }
 
+.selects {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-months, .select-years {
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  margin: 0.5rem;
+}
+
 section.modal-container, section.clock-container {
   width: 100%;
   height: 100%;
@@ -47,6 +63,7 @@ section.modal-container, section.clock-container {
 .modal-header {
   display: flex;
 }
+
 .modal-header > *:first-child {
   flex: 1 0 0;
 }
@@ -64,12 +81,14 @@ section.modal-container, section.clock-container {
   display: flex;
   flex-direction: column;
 }
+
 #modal-form .row {
   display: flex;
   padding: 8px 0;
   justify-content: space-between;
   position: relative;
 }
+
 #modal-form .row::after {
   content: " ";
   position: absolute;
@@ -91,5 +110,7 @@ section.modal-container, section.clock-container {
   padding: 2rem;
   text-align: center;
 }
+
+/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
